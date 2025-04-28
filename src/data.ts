@@ -50,7 +50,7 @@ export const projects = [
 		title: 'redux toolkit basket',
 		text: {
 			en: `This project is based on the Redux Toolkit library, which provides better state management for React. The project utilizes an API created specifically for it. The main functionalities are to add more items to the basket and to remove items from the basket. With every action, the total price changes. It also allows you to clear the entire basket at once. The project is hosted on the Render platform; to access it, you must wait for 30 seconds due to Render's limitations.`,
-			pl: 'Ten projekt oparty jest na bibliotece Redux Toolkit, która zapewnia lepsze zarządzanie stanem w React. Projekt korzysta z API stworzonego specjalnie dla niego. Główne funkcjonalności to dodawanie kolejnych przedmiotów do koszyka oraz usuwanie przedmiotów z koszyka. Przy każdej akcji całkowita cena się zmienia. Umożliwia również jednoczesne opróżnienie całego koszyka. Projekt jest hostowany na platformie Render; aby uzyskać do niego dostęp, musisz poczekać 30 sekund z powodu jej Rendera.',
+			pl: 'Ten projekt oparty jest na bibliotece Redux Toolkit, która zapewnia lepsze zarządzanie stanem w React. Projekt korzysta z API stworzonego specjalnie dla niego. Główne funkcjonalności to dodawanie kolejnych przedmiotów do koszyka oraz usuwanie przedmiotów z koszyka. Przy każdej akcji całkowita cena się zmienia. Umożliwia również jednoczesne opróżnienie całego koszyka. Projekt jest hostowany na platformie Render; aby uzyskać do niego dostęp, musisz poczekać 30 sekund z powodu ograniczeń Rendera.',
 		},
 		tech: [SiTailwindcss, SiTypescript, SiReact, SiAxios, SiRedux],
 	},
