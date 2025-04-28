@@ -10,7 +10,7 @@ const Projects = () => {
 			<h2 className='text-4xl font-bold tracking-wide capitalize'>
 				{t('projectsTitle')}
 			</h2>
-			<div className='mt-10 grid grid-cols-2 xl:grid-cols-3 gap-4'>
+			<div className='mt-10 grid grid-cols-3 xl:grid-cols-4 gap-4'>
 				{projects.map(project => {
 					const { url, github, title, text, tech, id } = project
 					return (

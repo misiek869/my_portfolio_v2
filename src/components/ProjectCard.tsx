@@ -25,17 +25,29 @@ const ProjectCard = ({
 	const { t } = useTranslation()
 
 	return (
-		<article className='border p-2 shadow-md hover:shadow-lg'>
-			<h3 className='text-xl font-semibold capitalize'>{title}</h3>
-			<h4 className='capitalize mt-3'>{t('projectTech')}</h4>
-			<div className='flex justify-center gap-3 mt-2'>
-				{tech.map((IconComponent, index) => (
-					<div key={index} className='text-3xl'>
-						<IconComponent />
-					</div>
-				))}
+		<article className='flex flex-col items-center border p-4 shadow-md hover:shadow-lg'>
+			<h3 className='text-2xl font-semibold capitalize tracking-wide text-center'>
+				{title}
+			</h3>
+			<div className='flex gap-x-6 justify-center mt-6'>
+				{url ? (
+					<a target='_blank' href={url} className=''>
+						<TbWorldWww className='h-8 w-8 text-sky-950 hover:text-black duration-300' />
+					</a>
+				) : (
+					''
+				)}
+
+				<a target='_blank' href={github} className=''>
+					<FaGithubSquare className='h-8 w-8 text-sky-950 hover:text-black duration-300' />
+				</a>
 			</div>
-			<Link to={`/projects/${id}`}>Dowiedz się więcej</Link>
+
+			<Link
+				to={`/projects/${id}`}
+				className='inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:shadow-none mt-6'>
+				Dowiedz się więcej
+			</Link>
 		</article>
 	)
 }
