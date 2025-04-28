@@ -6,7 +6,7 @@ const Projects = () => {
 	const { t } = useTranslation()
 
 	return (
-		<section className='mt-20 p-10 bg-white'>
+		<section className='mt-20 p-10 bg-white rounded-sm'>
 			<h2 className='text-4xl font-bold tracking-wide capitalize'>
 				{t('projectsTitle')}
 			</h2>

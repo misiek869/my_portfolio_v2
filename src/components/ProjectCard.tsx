@@ -25,7 +25,7 @@ const ProjectCard = ({
 	const { t } = useTranslation()
 
 	return (
-		<article className='flex flex-col items-center border p-4 shadow-md hover:shadow-lg'>
+		<article className='flex flex-col items-center border p-4 shadow-md hover:shadow-lg rounded-sm'>
 			<h3 className='text-2xl font-semibold capitalize tracking-wide text-center'>
 				{title}
 			</h3>
