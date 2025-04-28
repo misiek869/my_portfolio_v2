@@ -22,7 +22,7 @@ const ProjectCard = ({
 	tech,
 	id,
 }: ProjectCardProps) => {
-	const { t, i18n } = useTranslation()
+	const { t } = useTranslation()
 
 	return (
 		<article className='border p-2 shadow-md hover:shadow-lg'>
@@ -35,7 +35,6 @@ const ProjectCard = ({
 					</div>
 				))}
 			</div>
-			{/* <p className='p-2 mt-2'>{text[i18n.language as keyof typeof text]}</p> */}
 			<Link to={`/projects/${id}`}>Dowiedz się więcej</Link>
 		</article>
 	)
