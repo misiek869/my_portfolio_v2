@@ -3,6 +3,7 @@ import { TbWorldWww } from 'react-icons/tb'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
 import { IconType } from 'react-icons'
+import { Link } from 'react-router-dom'
 
 type ProjectCardProps = {
 	url?: string
@@ -10,9 +11,17 @@ type ProjectCardProps = {
 	title: string
 	text: { en: string; pl: string }
 	tech: IconType[]
+	id: string
 }
 
-const ProjectCard = ({ url, github, title, text, tech }: ProjectCardProps) => {
+const ProjectCard = ({
+	url,
+	github,
+	title,
+	text,
+	tech,
+	id,
+}: ProjectCardProps) => {
 	const { t, i18n } = useTranslation()
 
 	return (
@@ -26,7 +35,8 @@ const ProjectCard = ({ url, github, title, text, tech }: ProjectCardProps) => {
 					</div>
 				))}
 			</div>
-			<p className='p-2 mt-2'>{text[i18n.language as keyof typeof text]}</p>
+			{/* <p className='p-2 mt-2'>{text[i18n.language as keyof typeof text]}</p> */}
+			<Link to={`/projects/${id}`}>Dowiedz się więcej</Link>
 		</article>
 	)
 }

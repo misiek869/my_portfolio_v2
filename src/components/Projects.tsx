@@ -12,7 +12,7 @@ const Projects = () => {
 			</h2>
 			<div className='mt-10 grid grid-cols-2 xl:grid-cols-3 gap-4'>
 				{projects.map(project => {
-					const { url, github, title, text, tech } = project
+					const { url, github, title, text, tech, id } = project
 					return (
 						<ProjectCard
 							url={url}
@@ -20,6 +20,7 @@ const Projects = () => {
 							title={title}
 							text={text}
 							tech={tech}
+							id={id}
 						/>
 					)
 				})}
