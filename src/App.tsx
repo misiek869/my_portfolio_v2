@@ -1,6 +1,7 @@
 import About from './components/About'
 import SwitchLanguageButton from './components/LanguageSwitchBtn'
 import Projects from './components/Projects'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 	return (
