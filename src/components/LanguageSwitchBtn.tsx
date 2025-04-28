@@ -9,6 +9,10 @@ const languages = [
 	{ key: 'en', name: 'EN' },
 ]
 
+interface FlagIconProps {
+	countryCode: 'pl' | 'en' | string
+}
+
 const SwitchLanguageButton = () => {
 	const { i18n } = useTranslation()
 	const [isOpen, setIsOpen] = useState(false)
@@ -17,7 +21,7 @@ const SwitchLanguageButton = () => {
 		language => language.key === i18n.language
 	)
 
-	function FlagIcon({ countryCode }) {
+	function FlagIcon({ countryCode }: FlagIconProps) {
 		if (countryCode === 'en') {
 			countryCode = 'gb'
 		}
@@ -25,19 +29,24 @@ const SwitchLanguageButton = () => {
 		return <span className={`mr-2 fi fi-${countryCode}`}></span>
 	}
 
-	const handleLanguageChange = async language => {
+	const handleLanguageChange = async (language: {
+		key: string
+		name: string
+	}) => {
 		await i18n.changeLanguage(language.key)
+
 		setIsOpen(false)
 	}
 
 	useEffect(() => {
-		const handleWindowClick = event => {
-			const target = event.target.closest('button')
+		const handleWindowClick = (event: MouseEvent) => {
+			const target = (event.target as Element)?.closest('button')
 			if (target && target.id === LANGUAGE_SELECTOR_ID) {
 				return
 			}
 			setIsOpen(false)
 		}
+
 		window.addEventListener('click', handleWindowClick)
 		return () => {
 			window.removeEventListener('click', handleWindowClick)
@@ -60,8 +69,8 @@ const SwitchLanguageButton = () => {
 							id={LANGUAGE_SELECTOR_ID}
 							aria-haspopup='true'
 							aria-expanded={isOpen}>
-							<FlagIcon countryCode={selectedLanguage.key} />
-							{selectedLanguage.name}
+							<FlagIcon countryCode={selectedLanguage?.key || 'en'} />
+							{selectedLanguage?.name}
 							<svg
 								className='-mr-1 ml-2 h-5 w-5'
 								xmlns='http://www.w3.org/2000/svg'
@@ -89,7 +98,7 @@ const SwitchLanguageButton = () => {
 											key={language.key}
 											onClick={() => handleLanguageChange(language)}
 											className={`${
-												selectedLanguage.key === language.key
+												selectedLanguage?.key === language.key
 													? 'bg-gray-200 text-gray-900'
 													: 'text-gray-700'
 											}  px-4 py-2 text-sm text-left items-center inline-flex hover:bg-gray-100 ${
