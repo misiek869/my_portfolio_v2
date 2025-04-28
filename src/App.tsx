@@ -1,5 +1,6 @@
 import About from './components/About'
 import SwitchLanguageButton from './components/LanguageSwitchBtn'
+import Projects from './components/Projects'
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 			<div className='pt-20'>
 				{/* <div className='p-20 flex flex-col items-start justify-start'> */}
 				<About />
+				<Projects />
 			</div>
 		</main>
 	)
