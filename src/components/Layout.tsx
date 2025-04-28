@@ -8,7 +8,7 @@ const Layout = () => {
 				<SwitchLanguageButton />
 			</div>
 			<div className='pt-20'>
-				<Outlet /> {/* Tutaj będzie renderowana zawartość */}
+				<Outlet />
 			</div>
 		</main>
 	)
