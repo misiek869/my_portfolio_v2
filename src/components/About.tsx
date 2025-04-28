@@ -4,10 +4,11 @@ const About = () => {
 	const { t } = useTranslation()
 
 	return (
-		<section>
-			<h1 className=''>Michał Gawlik</h1>
-			<div className=''>
-				<p className=''>{t('about')}</p>
+		<section className=''>
+			<h1 className='text-6xl font-bold tracking-wide'>Michał Gawlik</h1>
+			<div className='mt-10'>
+				<p className='text-xl'>{t('about_01')}</p>
+				<p className='text-xl mt-6'>{t('about_02')}</p>
 			</div>
 		</section>
 	)
