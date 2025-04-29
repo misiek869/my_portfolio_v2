@@ -26,7 +26,7 @@ const ProjectCard = ({
 
 	return (
 		<article className='flex flex-col items-center border p-4 shadow-md hover:shadow-lg rounded-sm'>
-			<h3 className='bg-gradient-to-r from-red-950 via-gray-900 to-purple-900 inline-block text-transparent bg-clip-text text-2xl font-semibold capitalize tracking-wide text-center'>
+			<h3 className='bg-gradient-to-r from-red-950 via-gray-900 to-purple-950 inline-block text-transparent bg-clip-text text-2xl font-semibold capitalize tracking-wide text-center'>
 				{title}
 			</h3>
 			<div className='flex gap-x-6 justify-center mt-6'>
