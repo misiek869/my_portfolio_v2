@@ -5,7 +5,7 @@ i18n.use(initReactI18next).init({
 	resources: {
 		en: {
 			translation: {
-				about_01: `I am a junior frontend developer from Poland, currently
+				about_01: `Hi. I am a junior frontend developer from Poland, currently
 						transitioning from being a car detailing business owner to a career
 						in programming.`,
 				about_02: `In my work I am focusing on a TypeScript, JavaScript and React
@@ -27,7 +27,7 @@ i18n.use(initReactI18next).init({
 		pl: {
 			translation: {
 				about_01:
-					'Jestem programistą frontendowym na poziomie juniora. Obecnie jestem w trakcie przechodzenia z prowadzenia własnej firmy zajmującej się detailingiem samochodowym do pracy jako programista. ',
+					'Cześć. Jestem programistą frontendowym na poziomie juniora. Obecnie jestem w trakcie przechodzenia z prowadzenia własnej firmy zajmującej się detailingiem samochodowym do pracy jako programista. ',
 				about_02:
 					'W mojej pracy głównie skupiam się na TypeScript, JavaScript i React. Mam już doświadczenie w tworzeniu projektów w React oraz full-stackowych aplikacji webowych z Next.js.',
 				aboutTitle: 'O Mnie',

@@ -7,8 +7,10 @@ const About = () => {
 		<section className=''>
 			<h1 className='text-6xl font-bold tracking-wide'>Michał Gawlik</h1>
 			<div className='mt-10'>
-				<p className='text-xl tracking-wide leading-loose'>{t('about_01')}</p>
-				<p className='text-xl tracking-wide leading-loose mt-6'>
+				<p className='text-xl tracking-wide leading-loose md:text-2xl md:leading-relaxed'>
+					{t('about_01')}
+				</p>
+				<p className='text-xl tracking-wide leading-loose md:text-2xl mt-6 md:leading-relaxed'>
 					{t('about_02')}
 				</p>
 			</div>
