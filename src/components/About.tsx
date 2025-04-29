@@ -5,7 +5,9 @@ const About = () => {
 
 	return (
 		<section className=''>
-			<h1 className='text-6xl font-extrabold tracking-wide'>Michał Gawlik</h1>
+			<h1 className='bg-gradient-to-r from-red-950 via-gray-900 to-purple-900 inline-block text-transparent bg-clip-text text-6xl font-extrabold tracking-wide'>
+				Michał Gawlik
+			</h1>
 			<div className='mt-10'>
 				<p className='text-xl tracking-wide leading-loose md:text-2xl md:leading-relaxed'>
 					{t('about_01')}
