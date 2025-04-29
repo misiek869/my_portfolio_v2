@@ -19,6 +19,7 @@
 @tailwind utilities;
 
 :root {
-	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-family: 'Atkinson Hyperlegible', system-ui, Avenir, Helvetica, Arial,
+		sans-serif;
 	background-color: #f7f7f7;
 }
