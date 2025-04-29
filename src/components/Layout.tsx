@@ -7,7 +7,7 @@ const Layout = () => {
 			<div className='fixed top-4 right-4'>
 				<SwitchLanguageButton />
 			</div>
-			<div className='pt-20'>
+			<div className='py-20'>
 				<Outlet />
 			</div>
 		</main>
