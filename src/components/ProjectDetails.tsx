@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { FaArrowLeft } from 'react-icons/fa'
 
-import Footer from './Footer'
-
 const ProjectDetails = () => {
 	const { t, i18n } = useTranslation()
 	const { projectId } = useParams()
@@ -28,7 +26,7 @@ const ProjectDetails = () => {
 	}
 
 	return (
-		<div className='flex'>
+		<div className='flex flex-col'>
 			<Link
 				to='/'
 				className='absolute top-4 left-4 text-gray-500 hover:text-gray-800 duration-300 flex items-center '>
@@ -51,7 +49,6 @@ const ProjectDetails = () => {
 					{project.text[i18n.language as keyof typeof text]}
 				</p>
 			</div>
-			<Footer />
 		</div>
 	)
 }
