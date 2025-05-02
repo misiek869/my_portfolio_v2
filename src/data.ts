@@ -41,7 +41,8 @@ export const projects = [
 			en: `It is a simple project that uses the Unsplash API to search for photos. The most important aspect of this project was using the React Query library to cache images, eliminating the need to download them multiple times. It also provides day/night functionality.`,
 			pl: `Projekt, który wykorzystuje API Unsplash do wyszukiwania zdjęć. Najważniejszym elementem tego projektu było użycie biblioteki React Query do cache'owania obrazów, co pozwala na uniknięcie wielokrotnego pobierania tych samych zdjęć. Projekt oferuje również funkcjonalność przełączania między trybem dziennym a nocnym.`,
 		},
-		tech: [SiCss3, SiTypescript, SiReact, SiAxios, SiReactquery],
+		tech: [SiTypescript, SiReact, SiAxios, SiReactquery, SiCss3],
+		techText: ['TypeScript', 'React', 'Axios', 'React Query', 'CSS'],
 	},
 	{
 		id: uuidv4(),
@@ -53,7 +54,8 @@ export const projects = [
 			en: `This project is based on the Redux Toolkit library, which provides better state management for React. The project utilizes an API created specifically for it. The main functionalities are to add more items to the basket and to remove items from the basket. With every action, the total price changes. It also allows you to clear the entire basket at once. The project is hosted on the Render platform; to access it, you must wait for 30 seconds due to Render's limitations.`,
 			pl: 'Ten projekt oparty jest na bibliotece Redux Toolkit, która zapewnia lepsze zarządzanie stanem w React. Projekt korzysta z API stworzonego specjalnie dla niego. Główne funkcjonalności to dodawanie kolejnych przedmiotów do koszyka oraz usuwanie przedmiotów z koszyka. Przy każdej akcji całkowita cena się zmienia. Umożliwia również jednoczesne opróżnienie całego koszyka. Projekt jest hostowany na platformie Render; aby uzyskać do niego dostęp, musisz poczekać 30 sekund z powodu ograniczeń Rendera.',
 		},
-		tech: [SiTailwindcss, SiTypescript, SiReact, SiAxios, SiRedux],
+		tech: [SiTypescript, SiReact, SiAxios, SiRedux, SiTailwindcss],
+		techText: ['TypeScript', 'React', 'Axios', 'Reduc', 'Tailwindcss'],
 	},
 	{
 		id: uuidv4(),
@@ -66,6 +68,7 @@ export const projects = [
 			pl: `Głównym celem tego projektu było wykorzystanie biblioteki React Router do obsługi routingu stron. Projekt korzysta z API TheCocktailDB, aby wyszukiwać koktajle z całego świata. Użytkownicy mogą wyszukiwać napoje i zobaczyć więcej szczegółów na ich temat, takich jak instrukcje dotyczące ich przygotowania. Projekt wykorzystuje również bibliotekę React Query do cache'owania obrazów, eliminując potrzebę ich wielokrotnego pobierania.`,
 		},
 		tech: [SiCss3, SiTypescript, SiReact, SiAxios, SiReactquery, SiReactrouter],
+		techText: ['TypeScript', 'React', 'Axios', 'React Query', 'React Router'],
 	},
 	{
 		id: uuidv4(),
@@ -77,6 +80,7 @@ export const projects = [
 			pl: 'To API zostało stworzone specjalnie dla projektu Redux Toolkit Basket. Dane są przechowywane w bazie danych MongoDB i hostowane na platformie Render.',
 		},
 		tech: [SiJavascript, FaNode, SiMongodb, SiExpress, SiRender],
+		techText: ['JavaScript', 'Node', 'MongoDb', 'Express', 'Render'],
 	},
 	{
 		id: uuidv4(),
@@ -88,5 +92,6 @@ export const projects = [
 			pl: 'To API zostało stworzone specjalnie dla projektów sklepów intenetowych. API pozwala na logowanie użytkowników, w tym także jako admin. Możliwe jest także dodawanie, usuwanie i edycja produktów. Dane są przechowywane w bazie danych MongoDB i hostowane na platformie Render.',
 		},
 		tech: [SiJavascript, FaNode, SiMongodb, SiExpress, SiRender],
+		techText: ['JavaScript', 'Node', 'MongoDb', 'Express', 'Render'],
 	},
 ]
