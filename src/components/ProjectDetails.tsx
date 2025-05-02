@@ -29,14 +29,14 @@ const ProjectDetails = () => {
 	}
 
 	return (
-		<div className='flex flex-col mt-20'>
+		<div className='flex flex-col mt-20 '>
 			<Link
 				to='/'
 				className='absolute top-4 left-8 text-gray-500 hover:text-gray-800 duration-300 flex items-center group'>
 				<FaArrowLeft className='mr-2 transition-transform duration-300 group-hover:scale-125 group-hover:-translate-x-2' />
 				Powrót do strony głównej
 			</Link>
-			<div className='max-w-[90vw] lg:max-w-[70vw] mx-auto'>
+			<div className='max-w-[90vw] lg:max-w-[70vw] mx-auto '>
 				<h1 className='text-5xl bg-gradient-to-r from-purple-950 via-gray-950 to-purple-950 inline-block text-transparent bg-clip-text  font-bold tracking-wide capitalize pb-2'>
 					{project.title}
 				</h1>
@@ -48,25 +48,26 @@ const ProjectDetails = () => {
 						</div>
 					))}
 				</div>
+				<div className='bg-white rounded-sm shadow-sm p-10 mt-10'>
+					<p className='text-xl leading-loose  text-gray-900'>
+						{project.text[i18n.language as keyof typeof text]}
+					</p>
 
-				<p className='text-xl leading-loose mt-12 text-gray-900'>
-					{project.text[i18n.language as keyof typeof text]}
-				</p>
-
-				<p className='text-xl leading-loose mt-2 text-gray-900'>
-					{t('projectTech')}:{' '}
-					{project?.techText?.map((tech, index) => (
-						<span
-							className={`font-bold tracking-wide ${
-								index < project.techText.length - 1
-									? "after:content-[','] after:mr-1"
-									: ''
-							}`}
-							key={index}>
-							{tech}
-						</span>
-					))}
-				</p>
+					<p className='text-xl leading-loose mt-2 text-gray-900'>
+						{t('projectTech')}:{' '}
+						{project?.techText?.map((tech, index) => (
+							<span
+								className={`font-bold tracking-wide ${
+									index < project.techText.length - 1
+										? "after:content-[','] after:mr-1"
+										: ''
+								}`}
+								key={index}>
+								{tech}
+							</span>
+						))}
+					</p>
+				</div>
 			</div>
 		</div>
 	)
