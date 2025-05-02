@@ -14,12 +14,15 @@ const ProjectDetails = () => {
 
 	if (!project) {
 		return (
-			<div className='text-center py-20'>
+			<div className='text-center py-20 flex flex-col'>
 				<h2 className='text-2xl bg-gradient-to-r from-red-950 via-gray-900 to-purple-950 inline-block text-transparent bg-clip-text font-bold'>
 					Projekt nie znaleziony
 				</h2>
-				<Link to='/' className='mt-4 inline-block text-blue-500'>
-					← Powrót do strony głównej
+				<Link
+					to='/'
+					className='mx-auto mt-6 text-gray-500 hover:text-gray-800 duration-300 flex items-center group'>
+					<FaArrowLeft className='mr-2 transition-transform duration-300 group-hover:scale-125 ' />{' '}
+					Powrót do strony głównej
 				</Link>
 			</div>
 		)
@@ -29,8 +32,9 @@ const ProjectDetails = () => {
 		<div className='flex flex-col mt-20'>
 			<Link
 				to='/'
-				className='absolute top-4 left-4 text-gray-500 hover:text-gray-800 duration-300 flex items-center '>
-				<FaArrowLeft className='mr-2' /> Powrót do strony głównej
+				className='absolute top-4 left-8 text-gray-500 hover:text-gray-800 duration-300 flex items-center group'>
+				<FaArrowLeft className='mr-2 transition-transform duration-300 group-hover:scale-125' />
+				Powrót do strony głównej
 			</Link>
 			<div className='max-w-[90vw] lg:max-w-[70vw] mx-auto'>
 				<h1 className='text-5xl bg-gradient-to-r from-gray-800 via-purple-950 to-purple-950 inline-block text-transparent bg-clip-text  font-bold tracking-wide capitalize pb-2'>
