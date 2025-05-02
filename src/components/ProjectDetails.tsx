@@ -37,7 +37,7 @@ const ProjectDetails = () => {
 				Powrót do strony głównej
 			</Link>
 			<div className='max-w-[90vw] lg:max-w-[70vw] mx-auto'>
-				<h1 className='text-5xl bg-gradient-to-r from-gray-800 via-purple-950 to-purple-950 inline-block text-transparent bg-clip-text  font-bold tracking-wide capitalize pb-2'>
+				<h1 className='text-5xl bg-gradient-to-r from-purple-950 via-gray-950 to-purple-950 inline-block text-transparent bg-clip-text  font-bold tracking-wide capitalize pb-2'>
 					{project.title}
 				</h1>
 
