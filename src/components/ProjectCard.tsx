@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
 import { IconType } from 'react-icons'
 import { Link } from 'react-router-dom'
+import { FaArrowRight } from 'react-icons/fa'
 
 type ProjectCardProps = {
 	url?: string
@@ -46,8 +47,9 @@ const ProjectCard = ({
 				</div>
 				<Link
 					to={`/projects/${id}`}
-					className=' inline-flex items-center justify-center px-8 py-2 text-base leading-6 text-gray-600 font-semibold whitespace-no-wrap bg-white border border-gray-200 rounded-sm shadow-sm hover:bg-gray-50 hover:shadow-md focus:outline-none focus:shadow-none mt-8 duration-300'>
+					className=' inline-flex items-center justify-center px-8 py-2 text-base leading-6 text-gray-600 font-semibold whitespace-no-wrap bg-white border border-gray-200 rounded-sm shadow-sm hover:bg-gray-50 hover:shadow-md focus:outline-none focus:shadow-none mt-8 duration-300 group '>
 					{t('moreBtn')}
+					<FaArrowRight className='ml-2 transition-transform duration-500 group-hover:scale-125 group-hover:translate-x-1' />{' '}
 				</Link>
 			</div>
 		</article>
