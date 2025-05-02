@@ -4,8 +4,8 @@ const About = () => {
 	const { t } = useTranslation()
 
 	return (
-		<section className=''>
-			<h1 className='bg-gradient-to-r from-red-950 via-gray-900 to-purple-900 inline-block text-transparent bg-clip-text text-6xl font-extrabold tracking-wide'>
+		<section className='max-w-screen'>
+			<h1 className='bg-gradient-to-r from-purple-950 via-gray-900 to-purple-950 inline-block text-transparent bg-clip-text text-6xl font-extrabold tracking-wide'>
 				Michał Gawlik
 			</h1>
 			<div className='mt-10'>

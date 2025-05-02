@@ -4,7 +4,7 @@ const Interests = () => {
 	const { t } = useTranslation()
 
 	return (
-		<section className='mt-20 p-10 bg-[#DDDDDD] rounded-sm'>
+		<section className='mt-20 p-10 bg-[#DDDDDD] rounded-sm max-w-screen'>
 			<h2 className='bg-gradient-to-r to-red-950 via-gray-900 from-purple-950 inline-block text-transparent bg-clip-text text-4xl font-bold tracking-wide capitalize'>
 				{t('aboutTitle')}
 			</h2>

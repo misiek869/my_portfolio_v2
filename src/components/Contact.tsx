@@ -10,7 +10,7 @@ const Contact = () => {
   radial-gradient(circle at 70% 150%, #ee79de 0%, #000 48%)
 `,
 			}}
-			className='h-screen mt-20 p-10 rounded-sm flex flex-col justify-center'>
+			className='h-screen mt-20 p-10 rounded-sm flex flex-col justify-center max-w-screen'>
 			<h2 className='text-white text-4xl lg:text-6xl 2xl:text-7xl font-bold tracking-wide capitalize mb-10'>
 				{t('contactTitle')}
 			</h2>
