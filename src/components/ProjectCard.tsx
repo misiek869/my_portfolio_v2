@@ -25,29 +25,31 @@ const ProjectCard = ({
 	const { t } = useTranslation()
 
 	return (
-		<article className='flex flex-col items-center border p-4 shadow-sm  rounded-sm'>
+		<article className='flex flex-col items-center border p-4 shadow-sm  rounded-sm '>
 			<h3 className='bg-gradient-to-r from-red-950 via-gray-900 to-purple-950 inline-block text-transparent bg-clip-text text-2xl font-semibold capitalize tracking-wide text-center'>
 				{title}
 			</h3>
-			<div className='flex gap-x-6 justify-center mt-6'>
-				{url ? (
-					<a target='_blank' href={url} className=''>
-						<TbWorldWww className='h-8 w-8 text-sky-950 hover:text-black duration-300' />
+
+			<div className='mt-auto'>
+				<div className='flex gap-x-6 justify-center mt-6'>
+					{url ? (
+						<a target='_blank' href={url} className=''>
+							<TbWorldWww className='h-8 w-8 text-sky-950 hover:text-purple-900 duration-300' />
+						</a>
+					) : (
+						''
+					)}
+
+					<a target='_blank' href={github} className=''>
+						<FaGithubSquare className='h-8 w-8 text-sky-950 hover:text-purple-900 duration-300' />
 					</a>
-				) : (
-					''
-				)}
-
-				<a target='_blank' href={github} className=''>
-					<FaGithubSquare className='h-8 w-8 text-sky-950 hover:text-black duration-300' />
-				</a>
+				</div>
+				<Link
+					to={`/projects/${id}`}
+					className=' inline-flex items-center justify-center px-8 py-2 text-base leading-6 text-gray-600 font-semibold whitespace-no-wrap bg-white border border-gray-200 rounded-sm shadow-sm hover:bg-gray-50 hover:shadow-md focus:outline-none focus:shadow-none mt-8 duration-300'>
+					{t('moreBtn')}
+				</Link>
 			</div>
-
-			<Link
-				to={`/projects/${id}`}
-				className='inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:shadow-none mt-6'>
-				{t('moreBtn')}
-			</Link>
 		</article>
 	)
 }
