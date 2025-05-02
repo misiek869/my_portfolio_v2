@@ -5,7 +5,7 @@ const About = () => {
 
 	return (
 		<section className='max-w-screen'>
-			<h1 className='bg-gradient-to-r from-purple-950 via-gray-900 to-purple-950 inline-block text-transparent bg-clip-text text-6xl font-extrabold tracking-wide'>
+			<h1 className='bg-gradient-to-r from-purple-950 via-gray-900 to-gray-950 inline-block text-transparent bg-clip-text text-6xl font-extrabold tracking-wide'>
 				Michał Gawlik
 			</h1>
 			<div className='mt-10'>
