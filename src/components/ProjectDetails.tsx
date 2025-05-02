@@ -33,7 +33,7 @@ const ProjectDetails = () => {
 			<Link
 				to='/'
 				className='absolute top-4 left-8 text-gray-500 hover:text-gray-800 duration-300 flex items-center group'>
-				<FaArrowLeft className='mr-2 transition-transform duration-300 group-hover:scale-125' />
+				<FaArrowLeft className='mr-2 transition-transform duration-300 group-hover:scale-125 group-hover:-translate-x-2' />
 				Powrót do strony głównej
 			</Link>
 			<div className='max-w-[90vw] lg:max-w-[70vw] mx-auto'>
