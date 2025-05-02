@@ -29,6 +29,7 @@ export const projects = [
 			pl: 'Obecnie pracuję nad projektem sklepu internetowego. Projekt powstaje przy użyciu NextJs. Projekt będzie zawierał między innymi takie fukcjonalnośći: logowanie jako user lub admin, autoryzację przy użyciu next auth, połączenie z bazą danych przy użyciu Prisma, możliwość dodawania przedmiotów jako admin, płatność przy użyciu Stripe, możliwość wystawania recenzji, wyszukiwanie i filtrowanie przedmiotów. Dostępna jest wersja Live, która jest umieszczona na platformie Vercel. Wraz z rozwojem projektu wersja live będzie aktualizowania.',
 		},
 		tech: [SiNextdotjs, SiTypescript, SiReact, SiTailwindcss],
+		techText: ['Next.js', 'TypeScript', 'React', 'tailwindcss'],
 	},
 	{
 		id: uuidv4(),

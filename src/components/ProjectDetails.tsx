@@ -10,7 +10,7 @@ const ProjectDetails = () => {
 
 	const project = projects.find(p => p.id === projectId)
 
-	console.log(project.text)
+	console.log(project?.text)
 
 	if (!project) {
 		return (
@@ -26,7 +26,7 @@ const ProjectDetails = () => {
 	}
 
 	return (
-		<div className='flex flex-col'>
+		<div className='flex flex-col mt-20'>
 			<Link
 				to='/'
 				className='absolute top-4 left-4 text-gray-500 hover:text-gray-800 duration-300 flex items-center '>
@@ -45,8 +45,23 @@ const ProjectDetails = () => {
 					))}
 				</div>
 
-				<p className='text-xl leading-loose mt-16 text-gray-900'>
+				<p className='text-xl leading-loose mt-12 text-gray-900'>
 					{project.text[i18n.language as keyof typeof text]}
+				</p>
+
+				<p className='text-xl leading-loose mt-2 text-gray-900'>
+					{t('projectTech')}:{' '}
+					{project?.techText?.map((tech, index) => (
+						<span
+							className={`font-bold tracking-wide ${
+								index < project.techText.length - 1
+									? "after:content-[','] after:mr-1"
+									: ''
+							}`}
+							key={index}>
+							{tech}
+						</span>
+					))}
 				</p>
 			</div>
 		</div>
