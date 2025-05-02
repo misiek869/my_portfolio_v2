@@ -2,7 +2,9 @@ import { useParams } from 'react-router-dom'
 import { projects } from '../data'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { FaArrowLeft } from 'react-icons/fa'
+import { FaArrowLeft, FaGithub } from 'react-icons/fa'
+
+import { TbWorldWww } from 'react-icons/tb'
 
 const ProjectDetails = () => {
 	const { t, i18n } = useTranslation()
@@ -52,7 +54,19 @@ const ProjectDetails = () => {
 					<p className='text-xl leading-loose  text-gray-900'>
 						{project.text[i18n.language as keyof typeof text]}
 					</p>
+					<div className='flex gap-x-12 justify-center my-8'>
+						{project.url ? (
+							<a target='_blank' href={project.url} className=''>
+								<TbWorldWww className='h-14 w-14 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
+							</a>
+						) : (
+							''
+						)}
 
+						<a target='_blank' href={project.github} className=''>
+							<FaGithub className='h-14 w-14 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
+						</a>
+					</div>
 					<p className='text-xl leading-loose mt-2 text-gray-900'>
 						{t('projectTech')}:{' '}
 						{project?.techText?.map((tech, index) => (
