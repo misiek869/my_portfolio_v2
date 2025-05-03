@@ -28,7 +28,7 @@ const ProjectDetails = () => {
 	}
 
 	return (
-		<div className='flex flex-col mt-20 '>
+		<div className='flex flex-col mt-20 xl:mt-10'>
 			<Link
 				to='/'
 				className='absolute top-4 left-8 text-gray-500 hover:text-gray-800 duration-300 flex items-center group'>
