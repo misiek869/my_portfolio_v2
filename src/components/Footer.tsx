@@ -1,5 +1,6 @@
 import dayjs from 'dayjs'
-import { FaFacebook, FaInstagram } from 'react-icons/fa'
+
+import { FaSquareGithub, FaLinkedin } from 'react-icons/fa6'
 
 const Footer = () => {
 	const currentYear = dayjs().year()
@@ -10,11 +11,11 @@ const Footer = () => {
 				Copyright &copy;{currentYear} Michał Gawlik
 			</p>
 			<div className='flex items-center gap-x-4 justify-center'>
-				<a href={'#'}>
-					<FaFacebook className='text-slate-50 w-5 h-5 md:w-7 md:h-7 hover:text-slate-200 hover:animate-pulse' />
+				<a target='_blank' href={'https://www.linkedin.com/in/m-gawlik/'}>
+					<FaLinkedin className='text-slate-50 w-5 h-5 md:w-7 md:h-7 hover:text-slate-200 hover:animate-pulse' />
 				</a>
-				<a href={'#'}>
-					<FaInstagram className='text-slate-50 w-5 h-5 md:w-7 md:h-7 hover:text-slate-200 hover:animate-pulse' />
+				<a target='_blank' href={'https://github.com/misiek869'}>
+					<FaSquareGithub className='text-slate-50 w-5 h-5 md:w-7 md:h-7 hover:text-slate-200 hover:animate-pulse' />
 				</a>
 			</div>
 		</footer>
