@@ -8,12 +8,14 @@ const Interests = () => {
 			<h2 className='bg-gradient-to-r to-red-950 via-gray-900 from-purple-950 inline-block text-transparent bg-clip-text text-4xl font-bold tracking-wide capitalize'>
 				{t('aboutTitle')}
 			</h2>
-			<p className='text-xl tracking-wide leading-loose md:text-2xl md:leading-relaxed'>
-				{t('about_01')}
-			</p>
-			<p className='text-xl tracking-wide leading-loose md:text-2xl mt-6 md:leading-relaxed'>
-				{t('about_02')}
-			</p>
+			<div className='mt-10'>
+				<p className='text-xl tracking-wide leading-loose md:text-2xl md:leading-relaxed'>
+					{t('about_01')}
+				</p>
+				<p className='text-xl tracking-wide leading-loose md:text-2xl mt-6 md:leading-relaxed'>
+					{t('about_02')}
+				</p>
+			</div>
 		</section>
 	)
 }
