@@ -3,7 +3,6 @@ import { projects } from '../data'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { FaArrowLeft, FaGithub } from 'react-icons/fa'
-
 import { TbWorldWww } from 'react-icons/tb'
 
 const ProjectDetails = () => {
@@ -11,8 +10,6 @@ const ProjectDetails = () => {
 	const { projectId } = useParams()
 
 	const project = projects.find(p => p.id === projectId)
-
-	console.log(project?.text)
 
 	if (!project) {
 		return (
