@@ -35,14 +35,14 @@ const ProjectCard = ({
 				<div className='flex gap-x-6 justify-center mt-6'>
 					{url ? (
 						<a target='_blank' href={url} className=''>
-							<TbWorldWww className='h-8 w-8 text-sky-950 hover:text-purple-900 duration-300' />
+							<TbWorldWww className='h-8 w-8 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
 						</a>
 					) : (
 						''
 					)}
 
 					<a target='_blank' href={github} className=''>
-						<FaGithubSquare className='h-8 w-8 text-sky-950 hover:text-purple-900 duration-300' />
+						<FaGithubSquare className='h-8 w-8 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
 					</a>
 				</div>
 				<Link
