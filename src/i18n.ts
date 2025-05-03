@@ -22,6 +22,8 @@ i18n.use(initReactI18next).init({
 				seeLessBtn: 'show less',
 				moreBtn: 'More',
 				contactTitle: 'contact me',
+				goBackBtn: 'Go Back',
+				notFoundProject: `Can't find project`,
 			},
 		},
 		pl: {
@@ -39,6 +41,8 @@ i18n.use(initReactI18next).init({
 				heroBtn: 'moje projekty',
 				moreBtn: 'Więcej',
 				contactTitle: 'kontakt',
+				goBackBtn: 'Powrót do strony głównej',
+				notFoundProject: 'Nie ma takiego projektu',
 			},
 		},
 	},
