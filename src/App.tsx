@@ -3,8 +3,8 @@ import Hero from './components/Hero'
 import Projects from './components/Projects'
 import ProjectDetails from './components/ProjectDetails'
 import Layout from './components/Layout'
-import Interests from './components/Interests'
 import Contact from './components/Contact'
+import About from './components/About'
 
 function App() {
 	return (
@@ -17,7 +17,7 @@ function App() {
 							<>
 								<Hero />
 								<Projects />
-								<Interests />
+								<About />
 								<Contact />
 							</>
 						}

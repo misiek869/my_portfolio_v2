@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
-const Interests = () => {
+const About = () => {
 	const { t } = useTranslation()
 
 	return (
@@ -20,4 +20,4 @@ const Interests = () => {
 	)
 }
 
-export default Interests
+export default About
