@@ -5,7 +5,7 @@ import { FaSquareGithub, FaLinkedin } from 'react-icons/fa6'
 import michalImage from '../assets/images/Zdjęcie_michal.jpg'
 import michalImageTransparent from '../assets/images/michal.png'
 
-const About = () => {
+const Hero = () => {
 	const { t } = useTranslation()
 
 	return (
@@ -52,4 +52,4 @@ const About = () => {
 	)
 }
 
-export default About
+export default Hero

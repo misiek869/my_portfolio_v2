@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import About from './components/About'
+import Hero from './components/Hero'
 import Projects from './components/Projects'
 import ProjectDetails from './components/ProjectDetails'
 import Layout from './components/Layout'
@@ -15,7 +15,7 @@ function App() {
 						index
 						element={
 							<>
-								<About />
+								<Hero />
 								<Projects />
 								<Interests />
 								<Contact />
