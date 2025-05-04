@@ -26,8 +26,8 @@ const Hero = () => {
 				className='flex p-10 h-[50vh] rounded-sm'
 				style={{
 					background: `
-  radial-gradient(circle at 30% -30%, #ee79de 0%, transparent 48%),
-  radial-gradient(circle at 70% 150%, #ee79de 0%, #000 48%)
+  radial-gradient(circle at 30% -30%, #131213 0%, transparent 48%),
+  radial-gradient(circle at 90% 150%, #ee79de 0%, #000 48%)
 `,
 				}}>
 				<div className='flex flex-col items-start justify-center'>

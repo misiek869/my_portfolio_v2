@@ -6,8 +6,8 @@ const Contact = () => {
 		<section
 			style={{
 				background: `
-  radial-gradient(circle at 30% -30%, #ee79de 0%, transparent 48%),
-  radial-gradient(circle at 70% 150%, #ee79de 0%, #000 48%)
+  radial-gradient(circle at 90% -40%, #ee79de 0%, transparent 48%),
+  radial-gradient(circle at 30% 150%, #ee79de 0%, #000 48%)
 `,
 			}}
 			className='h-screen mt-20 p-10 rounded-sm flex flex-col justify-center max-w-screen shadow-sm mb-10'>
