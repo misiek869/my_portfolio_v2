@@ -1,9 +1,13 @@
 import { useTranslation } from 'react-i18next'
-
+import { motion } from 'framer-motion'
 const Contact = () => {
 	const { t } = useTranslation()
 	return (
-		<section
+		<motion.section
+			initial={{ x: '150%' }}
+			animate={{ x: 0 }}
+			exit={{ x: '150%' }}
+			transition={{ duration: 0.3, delay: 0.2 }}
 			style={{
 				background: `
   radial-gradient(circle at 90% -40%, #ee79de 0%, transparent 48%),
@@ -20,7 +24,7 @@ const Contact = () => {
 			<h3 className=' text-white text-4xl lg:text-6xl 2xl:text-7xl font-bold tracking-wide '>
 				+48 512-374-866
 			</h3>
-		</section>
+		</motion.section>
 	)
 }
 

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { FaArrowLeft, FaGithub } from 'react-icons/fa'
 import { TbWorldWww } from 'react-icons/tb'
+import { motion } from 'framer-motion'
 
 const ProjectDetails = () => {
 	const { t, i18n } = useTranslation()
@@ -28,7 +29,12 @@ const ProjectDetails = () => {
 	}
 
 	return (
-		<div className='flex flex-col mt-20 xl:mt-10'>
+		<motion.div
+			initial={{ x: '-200%' }}
+			animate={{ x: 0 }}
+			exit={{ x: '-200%' }}
+			transition={{ duration: 0.3 }}
+			className='flex flex-col mt-20 xl:mt-10'>
 			<Link
 				to='/'
 				className='absolute top-4 left-8 text-gray-500 hover:text-gray-800 duration-300 flex items-center group'>
@@ -36,7 +42,7 @@ const ProjectDetails = () => {
 				{t('goBackBtn')}
 			</Link>
 			<div className='max-w-[90vw] lg:max-w-[70vw] mx-auto '>
-				<h1 className='text-5xl bg-gradient-to-r from-purple-950 via-gray-950 to-purple-950 inline-block text-transparent bg-clip-text  font-bold tracking-wide capitalize pb-2'>
+				<h1 className='text-5xl bg-gradient-to-r from-purple-950 via-gray-950 to-purple-950 inline-block text-transparent bg-clip-text  font-bold tracking-wide capitalize pb-2 overflow-hidden'>
 					{project.title}
 				</h1>
 
@@ -80,7 +86,7 @@ const ProjectDetails = () => {
 					</p>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 

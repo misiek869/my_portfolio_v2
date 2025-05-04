@@ -1,12 +1,19 @@
 import { useTranslation } from 'react-i18next'
 import { projects } from '../data'
 import ProjectCard from './ProjectCard'
+import { v4 as uuidv4 } from 'uuid'
+import { motion } from 'framer-motion'
 
 const Projects = () => {
 	const { t } = useTranslation()
 
 	return (
-		<section className='mt-20 p-10 bg-white rounded-sm shadow-sm'>
+		<motion.section
+			initial={{ x: '150%' }}
+			animate={{ x: 0 }}
+			exit={{ x: '150%' }}
+			transition={{ duration: 0.3, delay: 0.1 }}
+			className='mt-20 p-10 bg-white rounded-sm shadow-sm'>
 			<h2 className='bg-gradient-to-r to-red-950 via-gray-900 from-purple-950 inline-block text-transparent bg-clip-text text-4xl font-bold tracking-wide capitalize'>
 				{t('projectsTitle')}
 			</h2>
@@ -21,11 +28,12 @@ const Projects = () => {
 							text={text}
 							tech={tech}
 							id={id}
+							key={uuidv4()}
 						/>
 					)
 				})}
 			</div>
-		</section>
+		</motion.section>
 	)
 }
 

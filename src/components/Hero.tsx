@@ -1,15 +1,20 @@
 import { useTranslation } from 'react-i18next'
-import { FaGithubSquare } from 'react-icons/fa'
-import { TbWorldWww } from 'react-icons/tb'
+
 import { FaSquareGithub, FaLinkedin } from 'react-icons/fa6'
 import michalImage from '../assets/images/Zdjęcie_michal.jpg'
 import michalImageTransparent from '../assets/images/michal.png'
+import { motion } from 'framer-motion'
 
 const Hero = () => {
 	const { t } = useTranslation()
 
 	return (
-		<section className='max-w-screen'>
+		<motion.section
+			initial={{ x: '150%' }}
+			animate={{ x: 0 }}
+			exit={{ x: '150%' }}
+			transition={{ duration: 0.3 }}
+			className='max-w-screen'>
 			{/* <h1 className='bg-gradient-to-r from-purple-950 via-gray-900 to-gray-950 inline-block text-transparent bg-clip-text text-6xl font-extrabold tracking-wide'>
 				Michał Gawlik
 			</h1>
@@ -48,7 +53,7 @@ const Hero = () => {
 				</div>
 				{/* <img src={michalImageTransparent} alt='' className='rounded-sm' /> */}
 			</div>
-		</section>
+		</motion.section>
 	)
 }
 
