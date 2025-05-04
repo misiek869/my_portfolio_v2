@@ -5,6 +5,9 @@ export default {
 			fontFamily: {
 				atkinson: ['"Atkinson Hyperlegible"', 'sans-serif'],
 			},
+			screens: {
+				'3xl': '121rem', // 1920px
+			},
 		},
 	},
 	plugins: [],

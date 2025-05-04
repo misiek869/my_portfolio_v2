@@ -15,13 +15,13 @@ const Contact = () => {
 `,
 			}}
 			className='h-screen mt-20 p-10 rounded-sm flex flex-col justify-center max-w-screen shadow-sm mb-10'>
-			<h2 className='text-white text-4xl lg:text-6xl 2xl:text-7xl font-bold tracking-wide capitalize mb-10'>
+			<h2 className='text-white text-4xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-bold tracking-wide capitalize mb-10'>
 				{t('contactTitle')}
 			</h2>
-			<h3 className=' text-white text-4xl lg:text-6xl 2xl:text-7xl font-bold tracking-wide mb-6'>
+			<h3 className=' text-white text-4xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-bold tracking-wide mb-6'>
 				gawlik.zator@o2.pl
 			</h3>
-			<h3 className=' text-white text-4xl lg:text-6xl 2xl:text-7xl font-bold tracking-wide '>
+			<h3 className=' text-white text-4xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-bold tracking-wide '>
 				+48 512-374-866
 			</h3>
 		</motion.section>

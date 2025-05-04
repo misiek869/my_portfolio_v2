@@ -11,14 +11,14 @@ const About = () => {
 			exit={{ x: '150%' }}
 			transition={{ duration: 0.3, delay: 0.2 }}
 			className='mt-20 p-10 bg-[#DDDDDD] rounded-sm shadow-sm'>
-			<h2 className='bg-gradient-to-r to-red-950 via-gray-900 from-purple-950 inline-block text-transparent bg-clip-text text-4xl font-bold tracking-wide capitalize'>
+			<h2 className='bg-gradient-to-r from-gray-950  to-purple-950 inline-block text-transparent bg-clip-text text-4xl font-bold tracking-wide capitalize 3xl:text-6xl'>
 				{t('aboutTitle')}
 			</h2>
 			<div className='mt-10'>
-				<p className='text-xl tracking-wide leading-loose md:text-2xl md:leading-relaxed'>
+				<p className='text-xl tracking-wide leading-loose md:text-2xl 3xl:text-3xl 3xl:leading-[3rem] md:leading-relaxed'>
 					{t('about_01')}
 				</p>
-				<p className='text-xl tracking-wide leading-loose md:text-2xl mt-6 md:leading-relaxed'>
+				<p className='text-xl tracking-wide leading-loose md:text-2xl 3xl:text-3xl 3xl:leading-[3rem] mt-6 md:leading-relaxed'>
 					{t('about_02')}
 				</p>
 			</div>

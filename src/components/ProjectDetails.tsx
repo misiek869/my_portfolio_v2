@@ -15,12 +15,12 @@ const ProjectDetails = () => {
 	if (!project) {
 		return (
 			<div className='text-center py-20 flex flex-col'>
-				<h2 className='text-2xl bg-gradient-to-r from-red-950 via-gray-900 to-purple-950 inline-block text-transparent bg-clip-text font-bold'>
+				<h2 className='text-2xl 3xl:text-4xl bg-gradient-to-r from-red-950 via-gray-900 to-purple-950 inline-block text-transparent bg-clip-text font-bold'>
 					{t('notFoundProject')}
 				</h2>
 				<Link
 					to='/'
-					className='mx-auto mt-6 text-gray-500 hover:text-gray-800 duration-300 flex items-center group'>
+					className='mx-auto mt-6 text-gray-500 hover:text-gray-800 duration-300 flex items-center group 3xl:text-2xl'>
 					<FaArrowLeft className='mr-2 transition-transform duration-300 group-hover:scale-125 ' />{' '}
 					{t('goBackBtn')}
 				</Link>
@@ -37,12 +37,12 @@ const ProjectDetails = () => {
 			className='flex flex-col mt-20 xl:mt-10'>
 			<Link
 				to='/'
-				className='absolute top-4 left-8 text-gray-500 hover:text-gray-800 duration-300 flex items-center group'>
+				className='absolute top-4 left-8 text-gray-500 hover:text-gray-800 duration-300 flex items-center group 3xl:text-2xl'>
 				<FaArrowLeft className='mr-2 transition-transform duration-300 group-hover:scale-125 group-hover:-translate-x-2' />
 				{t('goBackBtn')}
 			</Link>
 			<div className='max-w-[90vw] lg:max-w-[70vw] mx-auto '>
-				<h1 className='text-5xl bg-gradient-to-r from-purple-950 via-gray-950 to-purple-950 inline-block text-transparent bg-clip-text  font-bold tracking-wide capitalize pb-2 overflow-hidden'>
+				<h1 className='text-5xl 3xl:text-6xl bg-gradient-to-r from-purple-950 via-gray-950 to-purple-950 inline-block text-transparent bg-clip-text  font-bold tracking-wide capitalize pb-2 overflow-hidden'>
 					{project.title}
 				</h1>
 
@@ -54,23 +54,23 @@ const ProjectDetails = () => {
 					))}
 				</div>
 				<div className='bg-white rounded-sm shadow-sm p-10 mt-10'>
-					<p className='text-xl leading-loose  text-gray-900'>
+					<p className='text-xl 3xl:text-2xl  3xl:leading-10 leading-loose  text-gray-900'>
 						{project.text[i18n.language as keyof typeof text]}
 					</p>
 					<div className='flex gap-x-12 justify-center my-8'>
 						{project.url ? (
 							<a target='_blank' href={project.url} className=''>
-								<TbWorldWww className='h-14 w-14 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
+								<TbWorldWww className='h-14 w-14 3xl:w-20 3xl:h-20 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
 							</a>
 						) : (
 							''
 						)}
 
 						<a target='_blank' href={project.github} className=''>
-							<FaGithub className='h-14 w-14 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
+							<FaGithub className='h-14 w-14 3xl:w-20 3xl:h-20 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
 						</a>
 					</div>
-					<p className='text-xl leading-loose mt-2 text-gray-900'>
+					<p className='text-xl 3xl:text-2xl leading-loose mt-2 text-gray-900'>
 						{t('projectTech')}:{' '}
 						{project?.techText?.map((tech, index) => (
 							<span

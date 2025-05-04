@@ -14,10 +14,10 @@ const Projects = () => {
 			exit={{ x: '150%' }}
 			transition={{ duration: 0.3, delay: 0.1 }}
 			className='mt-20 p-10 bg-white rounded-sm shadow-sm'>
-			<h2 className='bg-gradient-to-r to-red-950 via-gray-900 from-purple-950 inline-block text-transparent bg-clip-text text-4xl font-bold tracking-wide capitalize'>
+			<h2 className='bg-gradient-to-r to-gray-950  from-purple-950 inline-block text-transparent bg-clip-text text-4xl font-bold tracking-wide capitalize 3xl:text-6xl'>
 				{t('projectsTitle')}
 			</h2>
-			<div className='mt-10 grid grid-cols-2 lg:grid-cols-3 gap-4'>
+			<div className='mt-10 grid grid-cols-2 lg:grid-cols-3 gap-4 3xl:gap-8'>
 				{projects.map(project => {
 					const { url, github, title, text, tech, id } = project
 					return (

@@ -28,7 +28,7 @@ const Hero = () => {
 			</div> */}
 
 			<div
-				className='flex p-10 h-[50vh] rounded-sm'
+				className='flex p-10 h-[50vh] xl:h-[80vh] rounded-sm'
 				style={{
 					background: `
   radial-gradient(circle at 30% -30%, #131213 0%, transparent 48%),
@@ -36,18 +36,18 @@ const Hero = () => {
 `,
 				}}>
 				<div className='flex flex-col items-start justify-center'>
-					<h1 className='text-slate-100 text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-wider mb-4'>
+					<h1 className='text-slate-100 text-5xl lg:text-5xl xl:text-6xl  3xl:text-8xl font-extrabold tracking-wider mb-4'>
 						Michał Gawlik
 					</h1>
-					<h3 className='text-slate-100 text-xl xl:text-3xl'>
+					<h3 className='text-slate-100 text-2xl xl:text-3xl 3xl:text-5xl'>
 						Front End Developer
 					</h3>
 					<div className='flex gap-x-6 justify-center mt-6'>
 						<a target='_blank' href={'https://www.linkedin.com/in/m-gawlik/'}>
-							<FaLinkedin className='text-slate-100 w-8 h-8 md:w-10 md:h-10 hover:text-slate-200 hover:animate-pulse hover:scale-110 duration-300' />
+							<FaLinkedin className='text-slate-100 w-8 h-8 md:w-10 md:h-10 3xl:w-12 3xl:h-12 hover:text-slate-200 hover:animate-pulse hover:scale-110 duration-300' />
 						</a>
 						<a target='_blank' href={'https://github.com/misiek869'}>
-							<FaSquareGithub className='text-slate-100 w-8 h-8 md:w-10 md:h-10 hover:text-slate-200 hover:animate-pulse hover:scale-110 duration-300' />
+							<FaSquareGithub className='text-slate-100 w-8 h-8 md:w-10 md:h-10 3xl:w-12 3xl:h-12 hover:text-slate-200 hover:animate-pulse hover:scale-110 duration-300' />
 						</a>
 					</div>
 				</div>
