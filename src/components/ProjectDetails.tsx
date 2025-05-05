@@ -46,14 +46,14 @@ const ProjectDetails = () => {
 					{project.title}
 				</h1>
 
-				<div className='flex justify-center gap-x-8 mt-14'>
+				<div className='flex flex-wrap mx-auto justify-center gap-x-8  mt-14'>
 					{project.tech.map((IconComponent, index) => (
-						<div key={index} className='text-6xl text-gray-900 '>
+						<div key={index} className='text-4xl sm:text-6xl text-gray-900 '>
 							<IconComponent />
 						</div>
 					))}
 				</div>
-				<div className='bg-white rounded-sm shadow-sm p-10 mt-10'>
+				<div className='bg-white rounded-sm shadow-sm p-5 sm:p-10 mt-10 max-w-full'>
 					<p className='text-xl 3xl:text-2xl  3xl:leading-10 leading-loose  text-gray-900'>
 						{project.text[i18n.language as keyof typeof project.text]}
 					</p>
@@ -74,7 +74,7 @@ const ProjectDetails = () => {
 						{t('projectTech')}:{' '}
 						{project?.techText?.map((tech, index) => (
 							<span
-								className={`font-bold tracking-wide ${
+								className={`font-bold tracking-wide max-w-full inline-block  ${
 									index < project.techText.length - 1
 										? "after:content-[','] after:mr-1"
 										: ''
