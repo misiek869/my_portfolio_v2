@@ -34,7 +34,7 @@ const ProjectDetails = () => {
 			animate={{ x: 0 }}
 			exit={{ x: '-200%' }}
 			transition={{ duration: 0.3 }}
-			className='flex flex-col mt-20 xl:mt-10'>
+			className='flex flex-col mt-20 xl:mt-10 mb-20'>
 			<Link
 				to='/'
 				className='absolute top-4 left-8 text-gray-500 hover:text-gray-800 duration-300 flex items-center group 3xl:text-2xl'>
@@ -42,7 +42,7 @@ const ProjectDetails = () => {
 				{t('goBackBtn')}
 			</Link>
 			<div className='max-w-[90vw] lg:max-w-[70vw] mx-auto '>
-				<h1 className='text-5xl 3xl:text-6xl bg-gradient-to-r from-purple-950 via-gray-950 to-purple-950 inline-block text-transparent bg-clip-text  font-bold tracking-wide capitalize pb-2 overflow-hidden'>
+				<h1 className='text-4xl md:text-5xl 3xl:text-6xl bg-gradient-to-r from-purple-950 via-gray-950 to-purple-950 inline-block text-transparent bg-clip-text  font-bold tracking-wide capitalize pb-2 overflow-hidden'>
 					{project.title}
 				</h1>
 
