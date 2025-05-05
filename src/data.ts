@@ -6,7 +6,6 @@ import {
 	SiReact,
 	SiTailwindcss,
 	SiCss3,
-	SiReactquery,
 	SiAxios,
 	SiRedux,
 	SiReactrouter,

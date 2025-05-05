@@ -55,7 +55,7 @@ const ProjectDetails = () => {
 				</div>
 				<div className='bg-white rounded-sm shadow-sm p-10 mt-10'>
 					<p className='text-xl 3xl:text-2xl  3xl:leading-10 leading-loose  text-gray-900'>
-						{project.text[i18n.language as keyof typeof text]}
+						{project.text[i18n.language as keyof typeof project.text]}
 					</p>
 					<div className='flex gap-x-12 justify-center my-8'>
 						{project.url ? (

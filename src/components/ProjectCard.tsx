@@ -19,8 +19,8 @@ const ProjectCard = ({
 	url,
 	github,
 	title,
-	text,
-	tech,
+	// text,
+	// tech,
 	id,
 }: ProjectCardProps) => {
 	const { t } = useTranslation()

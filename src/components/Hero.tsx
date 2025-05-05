@@ -1,13 +1,9 @@
-import { useTranslation } from 'react-i18next'
-
 import { FaSquareGithub, FaLinkedin } from 'react-icons/fa6'
-import michalImage from '../assets/images/Zdjęcie_michal.jpg'
-import michalImageTransparent from '../assets/images/michal.png'
+// import michalImage from '../assets/images/Zdjęcie_michal.jpg'
+// import michalImageTransparent from '../assets/images/michal.png'
 import { motion } from 'framer-motion'
 
 const Hero = () => {
-	const { t } = useTranslation()
-
 	return (
 		<motion.section
 			initial={{ x: '150%' }}
@@ -28,7 +24,7 @@ const Hero = () => {
 			</div> */}
 
 			<div
-				className='flex p-10 h-[50vh] xl:h-[80vh] rounded-sm'
+				className='flex p-4 md:p-10 h-[50vh] xl:h-[80vh] rounded-sm'
 				style={{
 					background: `
   radial-gradient(circle at 30% -30%, #131213 0%, transparent 48%),
@@ -36,7 +32,7 @@ const Hero = () => {
 `,
 				}}>
 				<div className='flex flex-col items-start justify-center'>
-					<h1 className='text-slate-100 text-5xl lg:text-5xl xl:text-6xl  3xl:text-8xl font-extrabold tracking-wider mb-4'>
+					<h1 className='text-slate-100 text-4xl lg:text-5xl xl:text-6xl  3xl:text-8xl font-extrabold tracking-wider mb-4'>
 						Michał Gawlik
 					</h1>
 					<h3 className='text-slate-100 text-2xl xl:text-3xl 3xl:text-5xl'>
