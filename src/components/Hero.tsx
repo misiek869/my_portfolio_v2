@@ -32,10 +32,10 @@ const Hero = () => {
 `,
 				}}>
 				<div className='flex flex-col items-start justify-center'>
-					<h1 className='text-slate-100 text-4xl lg:text-5xl xl:text-6xl  3xl:text-8xl font-extrabold tracking-wider mb-4'>
+					<h1 className='text-slate-100 text-4xl sm:text-5xl lg:text-7xl 3xl:text-8xl font-extrabold tracking-wider mb-4'>
 						Michał Gawlik
 					</h1>
-					<h3 className='text-slate-100 text-2xl xl:text-3xl 3xl:text-5xl'>
+					<h3 className='text-slate-100 text-2xl lg:text-4xl 3xl:text-5xl'>
 						Front End Developer
 					</h3>
 					<div className='flex gap-x-6 justify-center mt-6'>
