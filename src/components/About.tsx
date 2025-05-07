@@ -11,7 +11,7 @@ const About = () => {
 			exit={{ x: '150%' }}
 			transition={{ duration: 0.3, delay: 0.2 }}
 			className='mt-20 px-4 py-6 md:p-10 bg-[#DDDDDD] rounded-sm shadow-sm'>
-			<h2 className='bg-gradient-to-r from-gray-950  to-purple-950 inline-block text-transparent bg-clip-text text-4xl font-bold tracking-wide capitalize 3xl:text-5xl'>
+			<h2 className='bg-gradient-to-r from-gray-950  to-purple-950 inline-block text-transparent bg-clip-text text-3xl md:text-4xl font-bold tracking-wide capitalize 3xl:text-5xl'>
 				{t('aboutTitle')}
 			</h2>
 			<div className='mt-10'>
