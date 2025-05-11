@@ -20,12 +20,12 @@ export const projects = [
 	{
 		id: uuidv4(),
 		img: 'https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800',
-		url: 'https://e-commerce-shop-nextjs-iota.vercel.app/',
-		github: 'https://github.com/misiek869/e-commerce_shop_nextjs',
-		title: 'Detailing Shop',
+		url: 'https://miasto-pracownia-foundation-website.vercel.app/',
+		github: 'https://github.com/misiek869/Miasto_Pracownia_Foundation_Website',
+		title: 'Miasto Pracownia Website',
 		text: {
 			en: 'Currently, I am working on an e-commerce shop project. The project is being developed using Next.js. It will include functionalities such as: Login as a user or admin, Authentication using Next Auth, Database connection using Prisma, Ability to add items as an admin, Payment integration using Stripe, Option to post reviews, Search and filter items. A live version of the project is available and hosted on the Vercel platform. As the project progresses, the live version will be updated accordingly.',
-			pl: 'Obecnie pracuję nad projektem sklepu internetowego. Projekt powstaje przy użyciu NextJs. Projekt będzie zawierał między innymi takie fukcjonalnośći: logowanie jako user lub admin, autoryzację przy użyciu next auth, połączenie z bazą danych przy użyciu Prisma, możliwość dodawania przedmiotów jako admin, płatność przy użyciu Stripe, możliwość wystawania recenzji, wyszukiwanie i filtrowanie przedmiotów. Dostępna jest wersja Live, która jest umieszczona na platformie Vercel. Wraz z rozwojem projektu wersja live będzie aktualizowania.',
+			pl: 'Wykonanie strony internetowej dla organizacji pozarzadowej - Fundacja Miasto Pracownia, powstaje przy użyciu NextJs. Strona pozwala użytkownikom dowiedzieć się wszyskiego o fundacji a także zapisać się na warsztaty. Na stonie znajduje się kalendarz z aktualnymi wydarzeniami, na przyszłe wydażenia użytkownik może się zapisać, warsztaty które się odbyły są już nieaktywne.  Projekt pozwala się tażke  zalogować właścicielowi fundacji do panelu administratora. W panelu można zobaczyć wszystkie informacje na tema nadchodzących i przeszłych wydarzeń. Można także utworzyć nowe wydarzenie, które wyświetli się w kalendarzu, można także edytować wydarzenia.  Autoryzacja jest obsługowana przy użyciu next auth, połączenie z bazą danych przy użyciu Prisma. Dostępna jest wersja Live, która jest umieszczona na platformie Vercel. Wraz z rozwojem projektu wersja live będzie aktualizowania.',
 		},
 		tech: [SiNextdotjs, SiTypescript, SiReact, SiTailwindcss],
 		techText: ['Next.js', 'TypeScript', 'React', 'tailwindcss'],
