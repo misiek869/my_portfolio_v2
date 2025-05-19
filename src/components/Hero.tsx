@@ -36,7 +36,7 @@ const Hero = () => {
 						Michał Gawlik
 					</h1>
 					<h3 className='text-slate-100 text-2xl lg:text-4xl 3xl:text-5xl'>
-						Front End Developer
+						Frontend Developer
 					</h3>
 					<div className='flex gap-x-6 justify-center mt-6'>
 						<a target='_blank' href={'https://www.linkedin.com/in/m-gawlik/'}>
