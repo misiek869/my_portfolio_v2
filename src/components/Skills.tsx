@@ -14,6 +14,7 @@ import {
 	RiNodejsFill,
 } from 'react-icons/ri'
 import { BiLogoTypescript, BiLogoJavascript } from 'react-icons/bi'
+import { useTranslation } from 'react-i18next'
 
 type Skill = {
 	icon: React.ReactNode
@@ -32,10 +33,11 @@ const skills: Skill[] = [
 ]
 
 const Skills = () => {
+	const { t } = useTranslation()
 	return (
 		<div>
 			<h2 className='bg-gradient-to-r from-gray-950  to-purple-950 inline-block text-transparent bg-clip-text text-2xl md:text-3xl font-bold tracking-wide capitalize 3xl:text-4xl mb-6'>
-				Moje Umiejętności
+				{t('skillsTitle')}
 			</h2>
 			<div className='flex flex-wrap gap-6  justify-center mx-auto'>
 				{skills.map((item, index) => {

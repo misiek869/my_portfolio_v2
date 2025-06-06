@@ -24,6 +24,7 @@ i18n.use(initReactI18next).init({
 				contactTitle: 'contact me',
 				goBackBtn: 'Go Back',
 				notFoundProject: `Can't find project`,
+				skillsTitle: 'My Skills',
 			},
 		},
 		pl: {
@@ -43,6 +44,7 @@ i18n.use(initReactI18next).init({
 				contactTitle: 'kontakt',
 				goBackBtn: 'Powrót do strony głównej',
 				notFoundProject: 'Nie ma takiego projektu',
+				skillsTitle: 'Moje Umiejętności',
 			},
 		},
 	},
