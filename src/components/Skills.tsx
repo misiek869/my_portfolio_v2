@@ -31,10 +31,10 @@ const skills: Skill[] = [
 const Skills = () => {
 	return (
 		<div>
-			<h2 className='bg-gradient-to-r from-gray-950  to-purple-950 inline-block text-transparent bg-clip-text text-3xl md:text-4xl font-bold tracking-wide capitalize 3xl:text-5xl mb-6'>
+			<h2 className='bg-gradient-to-r from-gray-950  to-purple-950 inline-block text-transparent bg-clip-text text-2xl md:text-3xl font-bold tracking-wide capitalize 3xl:text-4xl mb-6'>
 				Moje Umiejętności
 			</h2>
-			<div className='flex flex-wrap gap-6 max-w-sm xl:max-w-none justify-center'>
+			<div className='flex flex-wrap gap-6  justify-center mx-auto'>
 				{skills.map((item, index) => {
 					return (
 						<TooltipProvider key={index}>
