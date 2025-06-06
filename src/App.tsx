@@ -19,8 +19,8 @@ function App() {
 						element={
 							<>
 								<Hero />
-								<Projects />
 								<About />
+								<Projects />
 								<Contact />
 							</>
 						}
