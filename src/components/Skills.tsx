@@ -13,6 +13,7 @@ import {
 	RiTailwindCssFill,
 	RiNodejsFill,
 } from 'react-icons/ri'
+import { BiLogoTypescript, BiLogoJavascript } from 'react-icons/bi'
 
 type Skill = {
 	icon: React.ReactNode
@@ -20,6 +21,8 @@ type Skill = {
 }
 
 const skills: Skill[] = [
+	{ icon: <BiLogoTypescript />, name: 'JavaScript' },
+	{ icon: <BiLogoJavascript />, name: 'TypeScript' },
 	{ icon: <RiReactjsFill />, name: 'React.js' },
 	{ icon: <RiNextjsFill />, name: 'Next.js' },
 	{ icon: <RiHtml5Fill />, name: 'HTML 5' },
