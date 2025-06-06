@@ -2,6 +2,7 @@ import { FaSquareGithub, FaLinkedin } from 'react-icons/fa6'
 // import michalImage from '../assets/images/Zdjęcie_michal.jpg'
 // import michalImageTransparent from '../assets/images/michal.png'
 import { motion } from 'framer-motion'
+import { TypeAnimation } from 'react-type-animation'
 
 const Hero = () => {
 	return (
@@ -33,10 +34,22 @@ const Hero = () => {
 				}}>
 				<div className='flex flex-col items-start justify-center'>
 					<h1 className='text-slate-100 text-4xl sm:text-5xl lg:text-7xl 3xl:text-8xl font-extrabold tracking-wider mb-4'>
-						Michał Gawlik
+						<TypeAnimation
+							sequence={['Michał Gawlik', 1000]}
+							wrapper='h1'
+							speed={40}
+							// repeat={Infinity}
+							cursor={false}
+						/>
 					</h1>
 					<h3 className='text-slate-100 text-2xl lg:text-4xl 3xl:text-5xl'>
-						Frontend Developer
+						<TypeAnimation
+							sequence={['Frontend Developer', 1000]}
+							wrapper='h3'
+							speed={50}
+							// repeat={Infinity}
+							cursor={false}
+						/>
 					</h3>
 					<div className='flex gap-x-6 justify-center mt-6'>
 						<a target='_blank' href={'https://www.linkedin.com/in/m-gawlik/'}>
