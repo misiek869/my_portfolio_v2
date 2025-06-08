@@ -13,6 +13,12 @@ const Projects = () => {
 			animate={{ x: 0 }}
 			exit={{ x: '150%' }}
 			transition={{ duration: 0.3, delay: 0.1 }}
+			style={{
+				background: `
+    radial-gradient(circle at 25% 0%, #f4f4f4 10%, transparent 48%),
+    radial-gradient(circle at 90% 150%, #dcdcdc 0%, #ffffff 48%)
+  `,
+			}}
 			className='mt-20 p-10 bg-white rounded-sm shadow-sm'>
 			<h2 className='bg-gradient-to-r to-gray-950  from-purple-950 inline-block text-transparent bg-clip-text text-3xl md:text-4xl font-bold tracking-wide capitalize 3xl:text-5xl'>
 				{t('projectsTitle')}
