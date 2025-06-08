@@ -30,7 +30,7 @@ const ProjectCard = ({
 			style={{
 				background: `
   radial-gradient(circle at 30% -30%, #252225 0%, transparent 48%),
-  radial-gradient(circle at 90% 150%, #ee79de 0%, #000 65%)
+  radial-gradient(circle at 90% 150%, #aa559f 0%, #000 65%)
 `,
 			}}
 			className='flex flex-col items-center border p-4 shadow-sm bg-slate-50  rounded-lg '>
