@@ -49,7 +49,13 @@ const Skills = () => {
 										{item.icon}
 									</div>
 								</TooltipTrigger>
-								<TooltipContent>
+								<TooltipContent
+									style={{
+										background: `
+  radial-gradient(circle at 30% -30%, #252225 0%, transparent 48%),
+  radial-gradient(circle at 90% 150%, #aa559f 0%, #000 55%)
+`,
+									}}>
 									<p className='text-lg '>{item.name}</p>
 								</TooltipContent>
 							</Tooltip>
