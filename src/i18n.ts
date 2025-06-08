@@ -30,9 +30,17 @@ i18n.use(initReactI18next).init({
 		pl: {
 			translation: {
 				about_01:
-					'Cześć. Jestem programistą frontendowym na poziomie juniora. Obecnie jestem w trakcie przechodzenia z prowadzenia własnej firmy zajmującej się detailingiem samochodowym do pracy jako programista. ',
+					'Cześć! Mam na imię Michał i uczę się frontend developmentu z myślą o wejściu się do świata IT.',
 				about_02:
-					'W mojej pracy głównie skupiam się na TypeScript, JavaScript i React. Mam już doświadczenie w tworzeniu projektów w React oraz full-stackowych aplikacji webowych z Next.js.',
+					'Na co dzień prowadzę własną firmę zajmującą się detailingiem samochodowym, ale od dłuższego czasu to kodowanie coraz mocniej przyciąga moją uwagę – aż w końcu stało się czymś, w co postanowiłem wejść na poważnie.',
+				about_03:
+					'Nie mam jeszcze komercyjnego doświadczenia ani dyplomu z informatyki, ale mam coś innego: determinację, konsekwencję i konkretne umiejętności, które rozwijam każdego dnia. Uczyłem się samodzielnie, a przez pół roku uczestniczyłem w mentoringu w ramach programu DevMentor, gdzie pracowałem z doświadczonym programistą nad rozwojem praktycznych umiejętności.',
+				about_04:
+					'Dzisiaj najlepiej czuję się w React, Next.js i Tailwind CSS. Znam również dobrze TypeScript, JavaScript, CSS oraz podstawy Node.js. Buduję projekty – zarówno frontendowe, jak i full-stackowe – kilka z nich możesz zobaczyć poniżej.',
+				about_05:
+					'Szukam swojej pierwszej pracy jako frontend developer. Chcę uczyć się od bardziej doświadczonych programistów, rozwijać się w realnych produktach i wnosić do zespołu świeżą energię, odpowiedzialność i gotowość do działania.',
+				about_06:
+					'Jeśli szukasz kogoś, kto na serio chce wejść w IT i nie boi się pracy – odezwij się.',
 				aboutTitle: 'O Mnie',
 				techTitle: 'umiejętności',
 				projectsTitle: 'moje projekty',

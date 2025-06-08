@@ -36,7 +36,7 @@ const Skills = () => {
 	const { t } = useTranslation()
 	return (
 		<div>
-			<h2 className='bg-gradient-to-r from-gray-950  to-purple-950 inline-block text-transparent bg-clip-text text-2xl md:text-3xl font-bold tracking-wide capitalize 3xl:text-4xl mb-6'>
+			<h2 className='bg-gradient-to-r from-gray-950  to-purple-950 inline-block text-transparent bg-clip-text text-2xl md:text-3xl font-bold tracking-wide capitalize 3xl:text-4xl mb-12'>
 				{t('skillsTitle')}
 			</h2>
 			<div className='flex flex-wrap gap-6  justify-center mx-auto'>
