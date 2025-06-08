@@ -35,32 +35,7 @@ const Hero = () => {
 				<div className='flex flex-col items-start justify-center'>
 					<h1 className='text-slate-100 text-4xl sm:text-5xl lg:text-7xl 3xl:text-8xl font-extrabold tracking-wider mb-4'>
 						<TypeAnimation
-							sequence={[
-								'M',
-								100,
-								'Mi',
-								100,
-								'Mic',
-								100,
-								'Mich',
-								100,
-								'Micha',
-								100,
-								'Michał',
-								100,
-								'Michał G',
-								100,
-								'Michał Ga',
-								100,
-								'Michał Gaw',
-								100,
-								'Michał Gawl',
-								100,
-								'Michał Gawli',
-								100,
-								'Michał Gawlik',
-								100,
-							]}
+							sequence={['Michał Gawlik', 1000]}
 							wrapper='h1'
 							speed={40}
 							// repeat={Infinity}
