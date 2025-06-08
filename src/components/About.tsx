@@ -10,8 +10,14 @@ const About = () => {
 			initial={{ x: '150%' }}
 			animate={{ x: 0 }}
 			exit={{ x: '150%' }}
+			style={{
+				background: `
+    radial-gradient(circle at 30% -30%, #e0e0e0 20%, transparent 48%),
+    radial-gradient(circle at 90% 150%, #b0b0b0 0%, #f5f5f5 48%)
+  `,
+			}}
 			transition={{ duration: 0.3, delay: 0.2 }}
-			className='mt-20 px-4 py-6 md:px-10 md:py-16 bg-[#DDDDDD] rounded-sm shadow-sm'>
+			className='mt-20 px-4 py-6 md:px-10 md:py-16  rounded-sm shadow-sm'>
 			<div className='mb-8'>
 				<h2 className='bg-gradient-to-r from-gray-950  to-purple-950 inline-block text-transparent bg-clip-text text-3xl md:text-4xl font-bold tracking-wide capitalize 3xl:text-5xl'>
 					{t('aboutTitle')}
