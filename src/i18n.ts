@@ -5,12 +5,13 @@ i18n.use(initReactI18next).init({
 	resources: {
 		en: {
 			translation: {
-				about_01: `Hi. I am a junior frontend developer from Poland, currently
-						transitioning from being a car detailing business owner to a career
-						in programming.`,
-				about_02: `In my work I am focusing on a TypeScript, JavaScript and React
-						stack and have experience in building projects using React as well
-						as full-stack web applications with Next.js.`,
+				about_01: `Hi! My name is Michał, and I'm learning frontend development with the goal of entering the world of IT.`,
+				about_02: `By day, I run my own car detailing business, but for quite some time now, coding has been drawing more and more of my attention – to the point where I decided to take it seriously and fully commit to this new path.`,
+				about_03: `I don’t yet have commercial experience or a computer science degree, but I do have something else: determination, consistency, and practical skills that I improve every day. I’ve been learning on my own, and for six months I took part in a mentoring program through DevMentor, where I worked closely with a professional developer to sharpen my skills.`,
+				about_04: `Right now, I feel most confident working with React, Next.js, and Tailwind CSS. I’m also comfortable with TypeScript, JavaScript, CSS, and have a basic understanding of Node.js.
+I build both frontend and full-stack projects – you can check out a few of them below.`,
+				about_05: `I’m currently looking for my first job as a frontend developer. I want to learn from experienced developers, grow by working on real products, and bring fresh energy, reliability, and a strong work ethic to the team.`,
+				about_06: `If you’re looking for someone who’s genuinely committed to entering tech and isn’t afraid of hard work – let’s connect.`,
 				aboutTitle: 'About Me',
 				techTitle: 'tech stack',
 				projectsTitle: 'my projects',
