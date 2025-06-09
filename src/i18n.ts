@@ -5,7 +5,7 @@ i18n.use(initReactI18next).init({
 	resources: {
 		en: {
 			translation: {
-				about_01: `Hi! My name is Michał, and I'm learning frontend development with the goal of entering the world of IT.`,
+				about_01: `Hi! My name is Michał, and I'm learning frontend development with the goal of entering to the world of IT.`,
 				about_02: `By day, I run my own car detailing business, but for quite some time now, coding has been drawing more and more of my attention – to the point where I decided to take it seriously and fully commit to this new path.`,
 				about_03: `I don’t yet have commercial experience or a computer science degree, but I do have something else: determination, consistency, and practical skills that I improve every day. I’ve been learning on my own, and for six months I took part in a mentoring program through DevMentor, where I worked closely with a professional developer to sharpen my skills.`,
 				about_04: `Right now, I feel most confident working with React, Next.js, and Tailwind CSS. I’m also comfortable with TypeScript, JavaScript, CSS, and have a basic understanding of Node.js.
@@ -31,7 +31,7 @@ I build both frontend and full-stack projects – you can check out a few of the
 		pl: {
 			translation: {
 				about_01:
-					'Cześć! Mam na imię Michał i uczę się frontend developmentu z myślą o wejściu się do świata IT.',
+					'Cześć! Mam na imię Michał i uczę się frontend developmentu z myślą o wejściu do świata IT.',
 				about_02:
 					'Na co dzień prowadzę własną firmę zajmującą się detailingiem samochodowym, ale od dłuższego czasu to kodowanie coraz mocniej przyciąga moją uwagę – aż w końcu stało się czymś, w co postanowiłem wejść na poważnie.',
 				about_03:
