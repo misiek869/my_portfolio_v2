@@ -22,6 +22,7 @@ export const projects = [
 		img: 'https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800',
 		url: 'https://miasto-pracownia-foundation-website.vercel.app/',
 		github: 'https://github.com/misiek869/Miasto_Pracownia_Foundation_Website',
+		adminUrl: 'https://miasto-pracownia-foundation-website.vercel.app/sign-in',
 		title: 'Miasto Pracownia Website',
 		text: {
 			en: 'Development of a Website for a Non-Profit Organization - Fundacja Miasto Pracownia. The website is being created using Next.js. It allows users to learn all about the foundation and sign up for workshops. The site features: an event calendar displaying current workshops, registration functionality for upcoming events (past workshops are automatically deactivated). An admin panel for foundation owners with: full visibility of upcoming/past events, event creation (automatically appears in the calendar), event editing capabilities. Tech implementation: authentication via NextAuth, database integration using Prisma. Live deployment on Vercel, with continuous updates as the project evolves',

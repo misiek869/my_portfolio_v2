@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { FaArrowLeft, FaGithub } from 'react-icons/fa'
 import { TbWorldWww } from 'react-icons/tb'
+import { RiAdminFill } from 'react-icons/ri'
 import { motion } from 'framer-motion'
 
 const ProjectDetails = () => {
@@ -61,6 +62,14 @@ const ProjectDetails = () => {
 						{project.url ? (
 							<a target='_blank' href={project.url} className=''>
 								<TbWorldWww className='h-14 w-14 3xl:w-20 3xl:h-20 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
+							</a>
+						) : (
+							''
+						)}
+
+						{project.adminUrl ? (
+							<a target='_blank' href={project.adminUrl} className=''>
+								<RiAdminFill className='h-14 w-14 3xl:w-20 3xl:h-20 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
 							</a>
 						) : (
 							''
