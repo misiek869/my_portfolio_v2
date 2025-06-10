@@ -6,6 +6,12 @@ import { FaArrowLeft, FaGithub } from 'react-icons/fa'
 import { TbWorldWww } from 'react-icons/tb'
 import { RiAdminFill } from 'react-icons/ri'
 import { motion } from 'framer-motion'
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipProvider,
+	TooltipTrigger,
+} from '@/components/ui/tooltip'
 
 const ProjectDetails = () => {
 	const { t, i18n } = useTranslation()
@@ -60,24 +66,51 @@ const ProjectDetails = () => {
 					</p>
 					<div className='flex gap-x-12 justify-center my-8'>
 						{project.url ? (
-							<a target='_blank' href={project.url} className=''>
-								<TbWorldWww className='h-14 w-14 3xl:w-20 3xl:h-20 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
-							</a>
+							<TooltipProvider>
+								<Tooltip>
+									<TooltipTrigger>
+										<a target='_blank' href={project.url} className=''>
+											<TbWorldWww className='h-14 w-14 3xl:w-20 3xl:h-20 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
+										</a>
+									</TooltipTrigger>
+									<TooltipContent>
+										<p className='text-lg md:text-xl'>Live Version</p>
+									</TooltipContent>
+								</Tooltip>
+							</TooltipProvider>
 						) : (
 							''
 						)}
 
 						{project.adminUrl ? (
-							<a target='_blank' href={project.adminUrl} className=''>
-								<RiAdminFill className='h-14 w-14 3xl:w-20 3xl:h-20 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
-							</a>
+							<TooltipProvider>
+								<Tooltip>
+									<TooltipTrigger>
+										<a target='_blank' href={project.adminUrl} className=''>
+											<RiAdminFill className='h-14 w-14 3xl:w-20 3xl:h-20 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
+										</a>
+									</TooltipTrigger>
+									<TooltipContent>
+										<p className='text-lg md:text-xl'>Admin Panel</p>
+									</TooltipContent>
+								</Tooltip>
+							</TooltipProvider>
 						) : (
 							''
 						)}
 
-						<a target='_blank' href={project.github} className=''>
-							<FaGithub className='h-14 w-14 3xl:w-20 3xl:h-20 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
-						</a>
+						<TooltipProvider>
+							<Tooltip>
+								<TooltipTrigger>
+									<a target='_blank' href={project.github} className=''>
+										<FaGithub className='h-14 w-14 3xl:w-20 3xl:h-20 text-sky-950 hover:text-purple-950 duration-300 hover:scale-110' />
+									</a>
+								</TooltipTrigger>
+								<TooltipContent>
+									<p className='text-lg md:text-xl'>Github</p>
+								</TooltipContent>
+							</Tooltip>
+						</TooltipProvider>
 					</div>
 					<p className='text-xl 3xl:text-2xl leading-loose mt-2 text-gray-900'>
 						{t('projectTech')}:{' '}
